@@ -1,5 +1,20 @@
+# Lambda build artifacts
 package/
 *.zip
+
+# Environment variables (never commit secrets)
 .env
+.env.*
+
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# macOS
+.DS_Store

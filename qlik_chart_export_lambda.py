@@ -226,7 +226,7 @@ def default_filename(chart_id: str, output_type: str) -> str:
 
 def send_slack_notification(text: str) -> None:
     webhook_url = env("SLACK_WEBHOOK_URL")
-    if not webhook_url:
+    if not webhook_url:  
         return
     try:
         requests.post(webhook_url, json={"text": text}, timeout=10)
