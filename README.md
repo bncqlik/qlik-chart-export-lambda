@@ -6,7 +6,7 @@ An AWS Lambda function that exports chart data from **Qlik Cloud** (XLSX or CSV)
 
 ## Features
 
-- Export any Qlik Cloud chart/table as **XLSX** or **CSV**
+- Export any Qlik Cloud chart/table as **XLSX** and if selected then transform it on **CSV**
 - Optionally apply a **temporary bookmark** (pre-filtered selections)
 - Upload the exported file to an **SFTP server** (auto-creates remote directories)
 - Send **Slack notifications** on success or failure
