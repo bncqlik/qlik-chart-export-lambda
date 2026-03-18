@@ -349,7 +349,7 @@ lambda_handler(event)
 ### `No module named 'lambda_function'`
 
 **Cause:** The default Lambda handler name doesn't match the filename.  
-**Fix:** In Runtime settings, change handler from `lambda_function.lambda_handler` to `qlik_chart_export_lambda.lambda_handler`
+**Fix:** In Runtime settings, change handler from `lambda_function.lambda_handler` to `qlik_chart_export_lambda.lambda_handler` or just rename the file `qlik_chart_export_lambda.py` into `lambda_function.py` 
 
 ---
 
@@ -378,13 +378,6 @@ lambda_handler(event)
 
 **Cause:** Lambda default timeout is 3 seconds; chart export can take 30–120 seconds.  
 **Fix:** Set Lambda timeout to 10 minutes (Configuration → General configuration).
-
----
-
-### `pip` not found (macOS)
-
-**Cause:** macOS ships with `pip3`, not `pip`.  
-**Fix:** Use `pip3` in all commands.
 
 ---
 
